@@ -1,4 +1,5 @@
 #!/bin/sh
 
 cp -vR ./etc/* /etc/
+sed -e 's@#DAEMON_CONF@DAEMON_CONF@' -i /etc/default/hostapd
 
